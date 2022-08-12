@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "vin-sent-anal"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-6liozpwpscqh"
+s3_prefix = "vin-sent-anal"
+region = "us-west-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["SentimentFunction=681261969843.dkr.ecr.us-west-1.amazonaws.com/vinsentanal67dfe971/sentimentfunction35d37012repo"]
